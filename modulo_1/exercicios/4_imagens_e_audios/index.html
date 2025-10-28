@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <p>Tente abrir o site em dispositivos diferentes ou aumente e diminua tamanho do navegador</p>
+
+    <picture>
+        <source media="(max-width: 700px)" srcset="img2.png" type="image/png">
+
+        <source media="(max-width: 900px)" srcset="img3.jpg" type="image/jpg">
+
+        <img src="img1.png" alt="">
+    </picture>
+
+    <!-- Imagem mais pequena sempre acima - ordem precisa ser seguida-->
+
+    <h1>Reproduzindo áudios</h1>
+
+    <audio preload="metadata" controls autoplay>
+        <source src="happy-mistake.mp3">
+        <p>Infelizmente seu navegador não consegue reproduzir o arquivo MP3</p>
+    </audio>
+</body>
+</html>

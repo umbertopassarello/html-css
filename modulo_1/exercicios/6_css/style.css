@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+    background-color: antiquewhite;
+}
+
+body { 
+    background-image: linear-gradient(to right, white, gray);
+}
+
+h1 {
+    color: maroon;
+    background-color: darkgoldenrod;
+}
+
+h2 {
+    color: darkred;
+}
+
+p {
+    text-align: justify;
+}

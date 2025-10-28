@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* Fonte importata do google*/
+
+/*
+importar fontes baixadas no diretório
+@font-face {
+    font-family: ;
+    src: url( );
+}
+*/
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    /*
+    medidas absolutas
+    cm, mm, in, px, pt, pc 
+    
+    medidas relativas
+    em, ex, rem
+    */
+}
+
+h1 {
+       /* shrothand
+       - font style -> font-weigth -> font-size -> font-family
+
+       font-family: 'Word Sans", sans-serif
+       font-weight: bolder
+       font-size: 3em;
+       font-style: italic;
+       */
+
+       font: italic bolder 3em ;
+       text-align: center;
+}
+
+h2 {
+    font: italic bold 2em arial;
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1em;
+    font-style: normal;
+    text-align: justify;
+    text-indent: 30px;
+}

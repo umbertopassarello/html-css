@@ -1,0 +1,28 @@
+Cores primárias: Amarelo, vermelho e azul
+
+Cores secundárias: Verde, laranja e roxo
+
+Cores terciárias: amarelo-alaranjado, vermelho-alaranjado, vermelho-arroxeado, azul-arroxeado, azul-esverdeado e amarelo-esverdeado
+
+Cores frias: azul, o verde e o violeta
+
+Cores quentes: vermelho, o laranja e o amarelo
+
+Paleta de cores:
+- Definir cor principal
+- Em média 4 cores
+- Cor primária da marca do cliente
+
+Cores complementares (contraste):
+- Cor com maior contraste é sempre a oposta do circulo cromático
+
+Cores análogas (sintonia):
+- Cores vizinhas
+
+Cores análogas relacionadas:
+- Definir duas cores
+- Pular uma cor vizinha e utilizar a próxima
+
+Cores intercaladas:
+- Escolhe uma cor
+- pula uma e escolhe a outra

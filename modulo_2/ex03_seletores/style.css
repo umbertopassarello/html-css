@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+
+/*
+    id = #
+    class = .
+
+    utilizar mais de uma classe -> apenas separar com um espaço
+*/
+
+body {
+    background-color: #5B8FF0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #5B60F0;
+    background-color: #B75BF0;
+}
+
+h2 {
+    color: #6407D9;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: #5BBEF0;
+    color: #000AF5;
+}
+
+.basico{
+    background-color: green;
+
+}
+
+.intermediario{ 
+    background-color: yellow;
+
+}
+
+.avancado{
+    background-color: red;
+
+}
