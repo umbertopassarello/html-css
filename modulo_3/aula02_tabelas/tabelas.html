@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+        body{
+            background-color: rgb(42, 111, 134);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table {
+            width: 400px;    
+            position: relative;
+        }
+
+        th {
+            background-color: gray;
+            color: white;
+        }
+
+        thead{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        th, table, td {
+            border: 1px, solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: rgb(170, 102, 102);
+        }
+        tbody > tr:nth-child(odd){
+            background-color: rgb(240, 153, 153);
+        }
+                
+        #cinza {
+            background-color: gray;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Primeira Tabela</h1>
+        <!-- 
+        HIERARQUIA DE TABELA
+        TABLE = TABELA
+            TABLE ROW - LINHA DE TABELA (TR)
+                TABLE HEADER - CABEÇALHO DE TABELA (TH)
+                TABLE DATA - DADO DE TABELA (TD)
+        -->
+
+        <table>
+            <caption>População dos estados brasileiros</caption>
+            <thead>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>40.000.000</td>
+                </tr>
+
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>20.000.000</td>
+                </tr>
+                
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr><tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr><tr>
+                    <td>Espírito Santos</td>
+                    <td>5.000.000</td>
+                </tr>
+
+            </tbody>
+
+            <tfoot>
+                <th scope="row">Total de Habitantes</th>
+                <td id="cinza"><strong>47.000.000</strong></td>
+            </tfoot>
+        </table>
+</body>
+</html>

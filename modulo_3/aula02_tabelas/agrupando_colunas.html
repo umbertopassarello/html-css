@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando colunas</title>
+
+    <style>
+        body{ 
+            background-color: lightcoral;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        table{
+            width: 100px;
+        }
+
+        .cnome {
+            background-color: blueviolet;
+        }
+
+        .cgroup {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+
+        <colgroup>
+            <col class="cnome">
+            <col class="cgroup" span="2">
+            <col class="cprofissao">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>F</td>
+                <td>26</td>
+                <td>Profissão</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>F</td>
+                <td>26</td>
+                <td>Profissão</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>F</td>
+                <td>26</td>
+                <td>Profissão</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>F</td>
+                <td>26</td>
+                <td>Profissão</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>F</td>
+                <td>26</td>
+                <td>Profissão</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>F</td>
+                <td>26</td>
+                <td>Profissão</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
