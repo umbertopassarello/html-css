@@ -53,7 +53,7 @@ header a:hover{
 section{
     padding: 10vh 0px 10vh 30px;
     font-family: var(--fonte3);
-    font-size: 3vw;
+    font-size: 2.5vw;
     color: black;
     line-height: 2em;
 }
@@ -76,7 +76,7 @@ section{
 .imagem > p {
     color: white;
     background-color: rgba(0, 0, 0, 0.411);
-    width: 40vw;
+    width: 35vw;
     padding: 10px;
 }
 
