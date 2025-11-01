@@ -68,7 +68,7 @@ section{
 
 .imagem{
     background-size: cover;
-    background-position: center center;
+    background-position: right center;
     background-attachment: fixed;
     padding: 20px 0px 20px 20px;
 }
@@ -76,8 +76,8 @@ section{
 .imagem > p {
     color: white;
     background-color: rgba(0, 0, 0, 0.411);
-    width: 35vw;
     padding: 10px;
+    display: inline-block;
 }
 
 footer {
