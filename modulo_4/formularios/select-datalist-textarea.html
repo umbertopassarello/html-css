@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rádio Buttom e CheckBox</title>
+</head>
+<body>
+    <h1>Radio Buttom e CheckBox</h1>
+
+    <form action="" method="get" autocomplete="on">
+
+        <p>
+            <label for="iest">Estado: </label>
+            <select name="Estado" id="iest">
+
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Regiâo Sudeste">
+                    <option value="RJ"> Rio de Janeiro</option>
+                    <option value="SP"> São Paulo</option>
+                </optgroup>
+            </select>
+        </p>
+        
+        <p>
+            <label for="profissao">Profissão: </label>
+            <input type="text" name="profissao" id="iprof" list="lstprof">
+
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Programador</option>
+                <option>Contador</option>
+            </datalist>
+        </p>
+
+        <P>
+            <label for="mensagem">Mensagem: </label><br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" maxlength="400"></textarea>
+        </P>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar Campos">
+        </p>
+
+    </form>
+</body>
+</html>
