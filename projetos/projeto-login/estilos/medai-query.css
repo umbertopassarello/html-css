@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+
+
+/* vVersão para Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    body {
+        background-image: linear-gradient(to top, #5f2e82, #20b2aa);
+    }
+
+    main {
+        width: 80vw;
+        height: 60vh;
+        overflow: hidden;  /*Cortar tudo que ultrapassar a borda*/
+    }
+
+    div#imagem{
+        float: left;
+        width: 40%;
+        height: 100%;
+        border-radius: 0px;
+    }
+
+    div#formulario {
+        width: 60%;
+        float: right;
+    }
+
+}
+
+/* Versão para Desktop */
+@media screen and (min-width: 1025px) {
+
+    body {
+        background-image: linear-gradient(to top, #5f2e82, #20b2aa);
+    }
+    
+    main {
+        width: 60vw;
+        height: 70vh;
+        overflow: hidden;  /*Cortar tudo que ultrapassar a borda*/
+        max-width: 992px;
+    }
+
+    div#imagem{
+        float: right;
+        width: 50%;
+        height: 100%;
+
+        border-radius: 0px;
+    }
+
+    div#formulario {
+        width: 50%;
+        float: left;
+        margin-top: 5%;
+    }
+
+}
