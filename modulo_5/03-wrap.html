@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* flex-wrap: 
+            nowrap (não quebrar conteudo)
+            wrap (quebra o conteudo) no sentido do eixo transversal
+            wrap-reverse (quebra o conteudo invertido) oposto do eixo transversal
+            */
+
+        .container {
+            background-color: salmon;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* shorthan */
+            flex-flow: row nowrap;
+        }
+
+        .item {
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            flex: auto;
+            /* flex-auto não permite que o container tenha espaços em branco */
+        }
+
+        body {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">exemplo de bloco A</div>
+        <div class="item">exemplo de bloco B</div>
+        <div class="item">exemplo de bloco C</div>
+        <div class="item">exemplo de bloco D</div>
+        <div class="item">exemplo de bloco E</div>
+        <div class="item">exemplo de bloco F</div>
+        <div class="item">exemplo de bloco G</div>
+    </div>
+</body>
+</html>

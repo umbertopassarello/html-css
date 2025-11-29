@@ -53,21 +53,23 @@ div > p {
 }
 
 .campo {
+    height: 40px;
     width: 80%;
     margin: auto;
     margin-bottom: 10px;
     background-color: purple;
-
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
 }
 
 #pass, #email {
     background-color:  rgb(166, 222, 224);
-    height: 30px;
     border-radius: 10px;
-    display: inline-block;
-    width: 100%;
+    display: block;
+    width: 80%;
+    height: 100%;
+    float: right;
+    border: none;
 }
 
 #entrar, #resetSenha {
@@ -75,11 +77,31 @@ div > p {
     padding: 10px;
     margin: auto;
     margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
 }
+
 
 #entrar {
     background-color: #20b2aa;
     color: white;
     border-radius: 10px;
     font-weight: bold;
+}
+
+#entrar:hover {
+    background-color: #345857;
+}
+
+#resetSenha:hover {
+    background-color: #c1e9e7;
+    color: #20b2aa;
+    font-weight: bold;
+}
+
+span {
+    width: 20%;
+    color: white;
+    float: left;
+    padding-top: 10px;
 }
