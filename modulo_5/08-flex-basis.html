@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* flex-basis:  tamanho do item
+        auto (PADRÃO) - tamanho baseado no conteúdo do item
+        px - tamanho fixo em pixels
+        % - tamanho baseado no tamanho do container
+        em/rem - tamanho baseado na fonte do item ou raiz
+
+        */
+
+        .container {
+            background-color: salmon;
+            
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+        }
+
+        .item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 100px;
+        }
+
+        body {
+            background-color: lightgray;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1" style="order: 1;">A</div>
+        <div class="item" id="i2" style="order: 2;">B</div>
+        <div class="item" id="i3" style="order: 3;">C</div>
+        <div class="item" id="i4" style="order: 4;">Conteúdo um pouco maior</div>
+        <div class="item" id="i5" style="order: 5;">Conteúdo maior ainda</div>
+        <div class="item" id="i6" style="order: 6;">Conteúdo enorme, que vai ocupar mais espaço</div>
+        <div class="item" id="i7" style="order: 7;">G</div>
+    </div>
+</body>
+</html>

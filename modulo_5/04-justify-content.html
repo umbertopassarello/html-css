@@ -6,20 +6,41 @@
     <title>Document</title>
     <style>
 
-        /* flex-wrap: 
-            nowrap (não quebrar conteudo)
-            wrap (quebra o conteudo) no sentido do eixo transversal
-            wrap-reverse (quebra o conteudo invertido) oposto do eixo transversal
+        /* justify-content (eixo principal): 
+            flex-start (alinha ao inicio do eixo principal)
+
+            flex-end (alinha ao fim do eixo principal)
+
+            center (alinha ao centro do eixo principal)
+
+            space-between (distribui os itens com espaçamento igual entre eles)
+
+            space-around (dividie o espaço do container pela quantidade de itens e alinha ao centro de cada partição)
+             
+            space-evenly (distribui os itens com espaçamento igual entre eles e nas extremidades) 
+            ----------------------------------------------
+            align-items (eixo transversal):
+
+            stretch (PADRÃO) (estica os itens para preencher o container no eixo transversal)
+
+            flex-start (alinha ao inicio do eixo transversal)
+
+            flex-end (alinha ao fim do eixo transversal)
+
+            center (alinha ao centro do eixo transversal)
             */
 
         .container {
             background-color: salmon;
+            padding: 0px;
+            height: 700px;
+            margin: auto;
 
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
             /* shorthand */
             flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
         }
 
         .item {
@@ -27,7 +48,7 @@
             border: 1px solid black;
             padding: 10px;
             text-align: center;
-            flex: auto;
+
             /* flex-auto não permite que o container tenha espaços em branco */
         }
 

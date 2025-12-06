@@ -1,0 +1,45 @@
+Propriedades para o container:
+
+Display: Flex, inline, inline-block, none, block
+flex-direction (Direção do eixo principal): row, row-reverse, column, column-reverse
+flex-wrap: wrap, nowrap, wrap-reverse
+flex-flow (shorthand): flex-direction + flex-wrap; Ex: row wrap;
+
+Justify-content: Alinhamento dos itens no eixo principal;
+align-items: Alinhamento dos itens no eixo transversal;
+align-content: Alinhamento dos itens no eixo transversal QUANDO há quebra de linha;
+--------------------------------------------------------
+
+Propriedades para os itens:
+Align-self: Alinhamento de cada itens dentro do container (quando não aplicado, segue o align-items)
+order: ordem que cada item será exibido dentro do container (quando iguais segue o que aparece primeiro no cod)
+
+flex-basis: tamanho do item dentro do container (seguindo o eixo principal);
+    - auto (se adapta ao conteúdo)
+    - px (tamanho em pixels)
+    - % equivalente ao container;
+    - em (tamanho se adequa ao tamanho da fonte padrão)
+
+flex-grow: define se item pode crescer ou não (0 para falso e 1 para verdadeiro)
+flex-shrink: define se item pode encolher ou não (0 para falso e 1 para verdadeiro)
+ATENÇÃO: Pode se definir valores maiores que 1, dessa forma o elemento de ajustará proporcionalmente de acordo com os valores definidos de todos os itens   
+    Ex: Item 1: 1 1 auto; Item 2: 4 4 auto; - item 2 irá crescer e encolher 4x mais que item 1, de acordo com o espaço do container;
+
+ordem: grow > shrink > basis
+flex (shorthand): 1 0 100px
+pré definidos: 
+    - auto (1 1 auto - totalmente flexivel)
+    - initial (0 1 auto - encolhe mas não cresce) 
+    - none (0 0 auto - nada flexível)
+--------------------------------------------
+
+Alinhamentos: 
+    - STRETCH (padrão) - somente para align-items e align-content: Estica o item para preencher o container;
+
+    - Center: alinha ao centro
+    - Flex-start: Alinha ao início
+    - Flex-end: Alinha ao final
+    - space-between: Alinha os itens com espaços em branco iguais entre eles, porém colados na borda;
+    - space-evenly: Alinha os itens com espaços em branco entre eles, inclusive entre as bordas;
+    - space-around: Divide o container em partes de acordo com a quantidade de itens, e alinha cada item ao centro de cada partição 
+

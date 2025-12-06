@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* flex shrink: item pode diminuir? 
+        1 (PADRÃO) - pode diminuir
+        0 - não pode diminuir
+        
+        flex grow: item pode crescer?
+        0 (PADRÃO) - não pode crescer   
+        1 - pode crescer
+
+        quanto há múltiplos itens com flex grow ou flex shrink diferentes, o espaço extra (ou a necessidade de encolher) é dividido proporcionalmente entre eles, de acordo com os valores definidos. 
+        */
+
+        /* flex (shorthand)
+            ordem: flex-grow | flex-shrink | flex-basis
+            ex: flex: 1 0 150px;
+
+            initial: 0 1 auto;
+            none: 0 0 auto;
+            auto: 1 1 auto;
+        */
+
+
+        .container {
+            background-color: salmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+
+            /* shorthand */
+            flex: auto;
+        }
+
+        body {
+            background-color: lightgray;
+        }
+
+        #c {
+            /* shorthand */
+            flex: 0 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"> <p>A</p> </div>
+        <div class="item"><p>B</p></div>
+        <div class="item" id="c">C</div>
+    </div>
+</body>
+</html>

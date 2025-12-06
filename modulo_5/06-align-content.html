@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- align-content (alinha no eixo transversal quando há quebra de conteudo, ou seja, múltiplas linhas): 
+
+        stretch (PADRÃO) (estica as linhas para preencher o container no eixo transversal) 
+        
+        flex-start (alinha as linhas ao inicio do eixo transversal)
+
+        flex-end (alinha as linhas ao fim do eixo transversal)
+
+        center (alinha as linhas ao centro do eixo transversal)
+
+        space-between (distribui as linhas com espaçamento igual entre elas)   
+
+        space-around (dividie o espaço do container pela quantidade de linhas e alinha ao centro de cada partição)
+
+        space-evenly (distribui as linhas com espaçamento igual entre elas e nas extremidades)
+        
+        -->
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightcoral;
+        }
+
+        main {
+            background-color: lightgreen;
+            height: 90vh;
+            width: 90vw;
+            margin: auto;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+        }
+
+        div {
+            border: 1px solid black;
+            padding: 5px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+            <div class="item">exemplo de bloco A</div>
+            <div class="item">exemplo de bloco B</div>
+            <div class="item">exemplo de bloco C</div>
+            <div class="item">exemplo de bloco D</div>
+            <div class="item">exemplo de bloco E</div>
+            <div class="item">exemplo de bloco F</div>
+            <div class="item">exemplo de bloco H</div>
+            <div class="item">exemplo de bloco I</div>
+            <div class="item">exemplo de bloco J</div>
+            <div class="item">exemplo de bloco K</div>
+            <div class="item">exemplo de bloco L</div>
+            <div class="item">exemplo de bloco M</div>
+            <div class="item">exemplo de bloco N</div>
+            <div class="item">exemplo de bloco O</div>
+
+    </main>
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+@media screen and (max-width: 650px) {
+
+    nav {
+        flex-flow: column wrap;
+    }
+
+    nav ul {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    nav h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    li {
+        margin-top: 10px;
+        text-align: center;
+
+        flex: 1 0 150px;
+    }
+
+}
