@@ -1,0 +1,85 @@
+Grid: grade de elementos
+
+Grid-item: item da grade
+
+grid-track: fileiras da grade 
+
+grid-line: cada uma das linhas que formam as tracks (valores positivos ou negativos são aceitos. Ex: penúltima linha pode ser o número positivo equivalente ou -2)
+
+grid-area: conjunto de itens da grade
+
+grid-gap (gap): espaço entre cada itens
+----------------------------------------------------
+
+Propriedades do container (elemento pai):
+    - display: grid;
+    - grid-templates-columns: auto auto; * Cada auto vira uma coluna, divididas em tamanhos iguais
+    - grid-template-rows: 100px 100px 100px; três linhas com 100px cada
+    gap: 20px; espaço entre cada item
+-----------------------------------------------------
+
+Alinhamentos: align-itens; align-content; justify-itens; justify-content;
+    - Align: sempre alinhamento vertical
+    - Justify: sempre alinhamento horizontal
+------------------------------------------------------------
+align-itens (alinha o item dentro de seu espaço - vertical): 
+    stretch: estica cada item para preencher seu espaço;
+    start: alignha o item para o início de seu espaço (topo);
+    end: alinha o item para o final de seu espaço (fundo);
+    center: alinha ao centro do espaço
+
+justify-items (alinha o item dentro de seu espaço - horizontal): 
+    - stretch: estica o item para preencher seu espaço
+    - start: alinha ao início do espaço (esquerda)
+    - end: alinha ao final do espaço (direita)
+    - center: alinha ao centro do espaço
+-----------------------------------------------------------
+align-content (alinhamento de todo o conteúdo dentro do grid):
+    - start: alinha todo conteúdo ao inicio do grid (topo)
+    - end: alinha todo conteúdo ao final do grid (fundo)
+    - center: alinha todo conteúdo ao centro do grid verticalmente
+    - stretch: estica o conteúdo para preencher o grid verticalmente
+    - space-between: alinha com espaço iguais entre eles, porém colados nos extremos 
+    - space-around: divide o grid pela quantidade de itens e alinha ao centro de cada partição
+    - space-evenly: alinha com espaçamento igual entre eles, inclusive entre as bordas
+
+justify-content (alinhamento de todo o conteúdo dentro do grid):
+    - start: alinha todo conteúdo ao inicio do grid (esquerda)
+    - end: alinha todo conteúdo ao final do grid (direita)
+    - center: alinha todo conteúdo ao centro do grid horizontalmente
+    - stretch: estica o conteúdo para preencher o grid horizontalmente
+    - space-between: alinha com espaço iguais entre eles, porém colados nos extremos 
+    - space-around: divide o grid pela quantidade de itens e alinha ao centro de cada partição
+    - space-evenly: alinha com espaçamento igual entre eles, inclusive entre as bordas
+--------------------------------------------------------------------
+
+grid-auto-row: 100px: 
+    - indica que, ao adicionar uma linha a mais do que o definido no grid explicito, automaticamente a linha terá 100px;
+
+grid-auto-column: 100px: 
+    - indica que, ao adicionar uma coluna a mais do que foi definido no grid explicito, automaticamente a columa terá 100px;
+
+
+SIMPLIFICADORES
+place-items: align-items > justify-items - Ex: stretch center;
+
+place-content: align-content > justify-content - Ex: start end;
+
+grid-template: grid-templates-rows > grid-templates-columns - Ex: 100px 100px 100px / auto auto auto;
+
+repeat: serve para não ter que digitar cada uma das linhas ou colunas desejadas.
+    Ex: grid-template-columns: auto auto auto > grid-template-columns: repeat(3, auto)
+
+Forma final com simplificadores:
+grid-template: repeat(3, 100px) / repeat(3, auto);
+----------------------------------------
+fraction: medida de definição de tamanho de rows ou columns do grid
+    - Ex: 3 colunas, porém a do meio com o dobro de tamanho que as outras:
+        - grid-template-columns: 1fr 2fr 1fr;
+        irá dividir o tamanho total em 4, e a do meio terá 2/4 do tamanho total
+
+Misturando medidas.
+
+grid-template-columns: 100px 20% 1fr 1fr; (ou: repeat(2, 1fr)
+    - 20% se aplica no espaço total do container;
+    - fr se aplica somente no espaço restante do container
